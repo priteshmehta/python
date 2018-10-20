@@ -13,7 +13,7 @@ extendList(2)
 print(extendList(3))
 ```
 
-### Calling Python Objects 
+### Functions References
 ```
 def b():
   print "b() called "
@@ -224,13 +224,75 @@ print c1.age
 
 
 
-### Fun with Python
+### Python Peculiarity
 
-##### Run the command in Python shell
+#### Run the command in Python shell
 ```
 import this
 import __hello__ 
 import __phello__
 ```
 
+## List extend vs append
+```
 
+my_list = []
+my_list.extend("string")
+
+my_list2 = []
+my_list2.append("string")
+
+print("Extends: {}".format(my_list))
+print("Appends: {}".format(my_list2))
+```
+
+
+## Reverse a string in pythoninc way
+
+```
+a = "Python"
+print "Reverse is",a[::-1]
+```
+
+## Passing reference
+
+```
+a = [1]
+
+def change_value():
+  a.append(2)
+
+change_value()
+print a
+```
+
+## Shallow copy of list
+
+```
+a = [1,2,3]
+b = a
+b.append(10)
+print "Value of a: ",a
+print "Value of b: ",b
+
+```
+
+
+## String comparison using numeric operator
+
+```
+if "this"> "that":
+  print "True"
+
+```
+
+## Convert Nested list into single list
+
+```
+
+import itertools
+nested_list = [[1, 2], [3, [10], 4], [5, 6]]
+flat_list = list(itertools.chain.from_iterable(a))
+print flat_list
+
+```
