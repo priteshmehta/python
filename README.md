@@ -229,6 +229,7 @@ print c1.age
 import this
 import __hello__ 
 import __phello__
+import antigravity
 ```
 
 ## List extend vs append
@@ -294,3 +295,11 @@ flat_list = list(itertools.chain.from_iterable(a))
 print flat_list
 
 ```
+
+## Further Reading
+
+1. [Useful Tips](https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html#multisets-and-multiset-operations-)
+2. [Python Challenge](http://www.pythonchallenge.com)
+
+
+
