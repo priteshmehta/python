@@ -222,11 +222,9 @@ print c1.age
 
 
 
-
-
 ### Python Peculiarity
 
-#### Run the command in Python shell
+## Run following commands in Python shell
 ```
 import this
 import __hello__ 
