@@ -85,6 +85,14 @@ def welcome_message(name):
 
 ```
 
+### Other types Decorator on classes
+```
+Decorators on classes
+Several decorators on one function
+Stateful decorators
+Classes as decorators
+```
+
 ### Assign function in variable
 
 ```
