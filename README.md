@@ -65,6 +65,24 @@ def welcome_message(name):
 
 
 print(welcome_message("Pritesh"))
+
+####### using functools #############
+import functools
+def greet(greet_str):
+    def _greet(fn):
+        @functools.wraps(fn)
+        def __greet(*args, **kwargs):
+            return greet_str + " " + fn(*args, **kwargs)
+
+        return __greet
+
+    return _greet
+
+
+@greet("Hello!")
+def welcome_message(name):
+    return name
+
 ```
 
 ### Assign function in variable
