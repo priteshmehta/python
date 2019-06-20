@@ -39,6 +39,8 @@ print ("get reference count:", sys.getrefcount(a))
 
 ## Decorator Concept
 
+https://realpython.com/primer-on-python-decorators/#decorating-classes
+
 #### Without decorator 
 
 ```
